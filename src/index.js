@@ -1,17 +1,41 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// export DataTable component
+import DataTable from './components/DataTable';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+//export FunctionalComponents
+import Header from './components/Header'; // Header
+import GlobalSearch from './components/functionalcomponents/GlobalSearch'; // Global Searchbar component
+import TableTitle from './components/functionalcomponents/TableTitle'; // TitleComponent
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//export BodyComponents
+import Table from './components/Table'; // Table component
+import TableHeader from './components/bodycomponents/TableHeader'; // TableHeader Component
+import TableBody from './components/bodycomponents/TableBody'; // TableBody Component
+
+import ColumnSearch from './components/bodycomponents/ColumnSearch'; // Field Searchbar component
+import DropdownFilter from './components/bodycomponents/DropdownFilter'; // Dropdown filter component
+
+//export Footer components
+import Footer from './components/Footer'; // Footer component
+import Pagination from './components/footercomponents/Pagination'; // Pagination Component
+import PageSizeControl from './components/footercomponents/PageSizeControl'; // PageSizeControl Component
+import SelectedNumber from './components/footercomponents/SelectedNumber'; // SelectedNumber Component
+
+// export DataTableServer component
+import DataTableServer from './DataTableServer';
+
+export {
+  DataTable,
+  DataTableServer,
+  Header,
+  GlobalSearch,
+  TableTitle,
+  Table,
+  TableHeader,
+  TableBody,
+  ColumnSearch,
+  DropdownFilter,
+  Footer,
+  Pagination,
+  PageSizeControl,
+  SelectedNumber
+};
